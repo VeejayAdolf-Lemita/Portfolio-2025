@@ -17,15 +17,16 @@ const Footer = () => {
             © {currentYear} Veejay Adolf M. Lemita. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            {['GitHub', 'LinkedIn', 'Twitter'].map((social) => (
+            {[{ link: 'https://github.com/VeejayAdolf-Lemita', name: 'GitHub' }, { link: 'https://www.linkedin.com/in/veejay-adolf-lemita-b572b217b/', name: 'LinkedIn' }, { link: 'https://www.instagram.com/vee_eeej/', name: 'Instagram' }].map((social) => (
               <motion.a
-                key={social}
-                href="#"
+                key={social.name}
+                href={social.link}
+                target='_blank'
                 whileHover={{ scale: 1.2, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-slate-500 dark:text-gray-400 hover:text-primary transition-colors"
               >
-                {social}
+                {social.name}
               </motion.a>
             ))}
           </div>

@@ -111,26 +111,14 @@ const Header = () => {
           >
             <div className="flex items-center space-x-2">
               <motion.div
-                className="w-10 h-10 bg-gradient-to-br from-primary to-teal-400 rounded-lg flex items-center justify-center"
+                className="w-16 h-16 rounded-lg flex items-center justify-center"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
               >
-                <span className="text-white font-bold text-lg">V</span>
+                <span className="text-white font-bold text-lg">
+                  <img src="/VAML.png" alt="Logo" />
+                </span>
               </motion.div>
-              <div className="flex flex-col">
-                <motion.span
-                  className="text-xl font-bold text-primary leading-tight"
-                  whileHover={{ color: '#2dd4bf' }}
-                >
-                  VEEJAY ADOLF M.
-                </motion.span>
-                <motion.span
-                  className="text-sm font-semibold text-slate-500 dark:text-gray-300 leading-tight"
-                  whileHover={{ color: '#14b8a6' }}
-                >
-                  LEMITA
-                </motion.span>
-              </div>
             </div>
           </motion.div>
 
