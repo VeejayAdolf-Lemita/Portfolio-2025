@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+
+  /* Light Mode Defaults */
+  --bg-color: #f8fafc;
+  /* slate-50 */
+  --text-color: #0f172a;
+  /* slate-900 */
+
+  /* Orb Colors (Darker for Light Mode visibility) */
+  --orb-1: rgba(20, 184, 166, 0.3);
+  --orb-2: rgba(20, 184, 166, 0.25);
+  --orb-3: rgba(45, 212, 191, 0.25);
+  --orb-4: rgba(20, 184, 166, 0.2);
+  --wave-color: rgba(20, 184, 166, 0.1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.dark {
+  /* Dark Mode Overrides */
+  --bg-color: #0f172a;
+  /* secondary */
+  --text-color: rgba(255, 255, 255, 0.87);
+
+  /* Orb Colors (Lighter/Glow for Dark Mode) */
+  --orb-1: rgba(20, 184, 166, 0.15);
+  --orb-2: rgba(20, 184, 166, 0.1);
+  --orb-3: rgba(45, 212, 191, 0.12);
+  --orb-4: rgba(20, 184, 166, 0.08);
+  --wave-color: rgba(20, 184, 166, 0.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+  /* slate-950 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  /* slate-700 */
+  border-radius: 5px;
+  border: 2px solid #020617;
+  /* Creates a padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+  /* teal-500 (primary) */
+}
+
+/* Super Thin Scrollbar for specific containers */
+.thin-scrollbar::-webkit-scrollbar {
+  height: 2px;
+  /* Horizontal scrollbar height */
+  width: 2px;
+  /* Vertical scrollbar width */
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  /* slate-300 */
+  border-radius: 10px;
+  border: none;
+}
+
+.dark .thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  /* slate-700 */
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #14b8a6;
+  /* primary */
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
