@@ -47,7 +47,7 @@ export const useProjectStore = create((set) => ({
       },
       {
         id: 2,
-        title: 'Strateji Admin Dashboard',
+        title: 'Strateji Admin',
         year: '2025',
         description: 'A centralized admin panel for managing companies, users, and platform-wide settings with comprehensive analytics and activity logging.',
         image: '/strateji-admin-dashboard.png',
