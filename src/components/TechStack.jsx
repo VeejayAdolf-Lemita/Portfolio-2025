@@ -69,7 +69,8 @@ const TechStack = () => {
   const languages = [
     { name: 'HTML', icon: '📄', color: 'from-orange-400 to-red-500' },
     { name: 'CSS', icon: '🎨', color: 'from-blue-400 to-indigo-500' },
-    { name: 'JavaScript', icon: '⚡', color: 'from-yellow-300 to-yellow-500' }
+    { name: 'JavaScript', icon: '⚡', color: 'from-yellow-300 to-yellow-500' },
+    { name: 'TypeScript', icon: '📘', color: 'from-blue-400 to-blue-600' }
   ]
 
   const frontend = [
