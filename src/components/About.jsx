@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Sparkles } from 'lucide-react'
+import profileImg from '../assets/profile.jpg'
 
 const About = () => {
   return (
@@ -136,7 +137,7 @@ const About = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-primary via-purple-500 to-cyan-500 rounded-[2rem] opacity-30 blur-xl" />
               <div className="relative rounded-[2rem] overflow-hidden border-2 border-slate-200 dark:border-white/10 bg-white dark:bg-slate-800 transition-colors duration-300">
                 <img
-                  src="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/595814961_2022910521828389_7490552598414674229_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wjWGNqSHuYoQ7kNvwF2z0hX&_nc_oc=AdmF2REZehF8YP49rW0EztTIVG76CFg5pmD_Gete6XmxHsfa4KpTD7IxXCRjGr7DV2o&_nc_zt=23&_nc_ht=scontent.fmnl25-1.fna&_nc_gid=SpKReIFPYsNAVYPrV7R_1Q&oh=00_AfnJLJ-wq6zyomjqXQMjcV7_gsODqOul_KHX9ozpvvuUsQ&oe=6946175C"
+                  src={profileImg}
                   alt="Veejay Adolf M. Lemita"
                   className="w-full max-w-md object-cover hover:scale-105 transition-transform duration-700"
                 />
